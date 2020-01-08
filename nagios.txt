@@ -1,0 +1,10 @@
+nagIOS installation
+
+sudo apt-get remove --purge 'mysql-.*'
+sudo apt-get purge --auto-remove mariadb-server
+
+cd /tmp
+wget https://assets.nagios.com/downloads/nagiosxi/5/xi-5.5.11.tar.gz
+tar xvf xi-5.5.11.tar.gz
+cd nagiosxi
+sudo ./fullinstall
